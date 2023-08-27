@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #F6ECEC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.mainContainer {
+    width: 80%;
+    height: 90%;
+    background-color: white;
+    border-radius: 60px;
+    position: relative;
+}
+
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav ul li a {
+    font-weight: 400;
+    color: #00240f;
+}
+
+nav ul li a:hover,
+.active {
+    color: #ec0000;
+}
+
+.signin {
+    padding: 5px 20px;
+    background-color: #ec0000;
+    color: #F6ECEC;
+    border-radius: 25px;
+}
+
+.signin:hover {
+    background-color: #F6ECEC;
+    color: #ec0000;
+}
+
+
+/* Header End */
+
+/* Banner */
+
+.bannerContainer {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+}
+
+.bannerLeft {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    gap: 20px;
+}
+
+.bannerLeft h1 {
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: -2px;
+    color: #00240f;
+}
+
+.bannerLeft p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #00240f;
+}
+
+.orderButton {
+    box-shadow: -10px 20px 40px 0 rgba(236, 0, 0, 0.16)
+}
+
+.bannerRight {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.bannerRight img {
+    width: 100%;
+
+}
+
+.linear {
+    position: absolute;
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+    top: 0;
+    height: 100%;
+    width: 20%;
+    left: 7%;
+
+}
+
+/* Banner End */
+
+/* Recomended Menu */
+
+.subHeader {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #00240f;
+}
+
+.abs1 {
+    position: absolute;
+    top: -15px;
+    left: 30%;
+}
+
+.abs1Img {
+    width: 30px;
+}
+
+.abs2 {
+    position: absolute;
+    right: -50px;
+    top: 350px;
+
+}
+
+.abs2Img {
+    width: 150px;
+}
+
+.abs3 {
+    position: absolute;
+    bottom: -75px;
+    right: -75px;
+}
+
+.abs3Img {
+    width: 150px;
+}
+
+.abs4 {
+    position: absolute;
+    bottom: -20px;
+    left: -80px;
+    z-index: -1000;
+
+}
+
+.abs4Img {
+    width: 100px;
+}
+
+.abs5 {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+
+}
+
+.abs5Img {
+    width: 150px;
+}
+
+/* banner end */
+
+/* Cards start */
+
+.cardsContainer {
+    width: 100%;
+
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #bdbdbd;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 180px;
+    border-top-right-radius: 180px;
+    transition: box-shadow 0.2s linear;
+
+}
+
+.imgContainer img {
+    width: 150px;
+
+}
+
+.cardHeader {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+
+.cardInfo {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 10px;
+    color: #333333;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #05a86B;
+    margin: 15px 0;
+}
+
+.select {
+    width: 90%;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.addButton {
+    border: none;
+    width: 90%;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+
+.card:hover {
+    box-shadow: 0 0 20px 0 #bdbdbd;
+}
